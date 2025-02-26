@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="icon" type="image/x-icon" href="https://icons8.com/icon/ie6nIMVxKs0a/quizlet">
+</head>
+<body>
+    <!-- Instruction Modal -->
+    <div id="instructionModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 class="modal-title">HTML Quiz Instructions</h3>
+                <p>Welcome to the HTML Quiz! This quiz will test your knowledge of HTML basics.</p>
+                <p>You will have <strong>15 seconds</strong> to answer each question. If you don't answer within the time limit, the quiz will automatically move to the next question.</p>
+                <p>There are 10 questions in total, and each correct answer is worth 2 points.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="startQuiz()">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Container -->
+    <div id="quizContainer">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex">
+                    <h5>Question <span id="currentQ">1</span>/<span id="totalQ">10</span></h5>
+                    <div>Time: <span id="timer">15</span></div>
+                </div>
+                <div id="questionText" class="my-4">Question text goes here</div>
+                <div id="options" class="row"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; Developed by Nilarka Das : +918207070408
+    </div>
+
+    <script src="htmlquiz.js"></script>
+</body>
+</html>

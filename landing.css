@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Topic Cards */
+.topic-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background: white;
+}
+
+.topic-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #495057;
+}
+
+/* Input Fields */
+.form-control {
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #6e8efb;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-color: #a777e3;
+    box-shadow: 0 0 10px rgba(167, 119, 227, 0.5);
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+    padding: 10px 20px;
+}
+
+.btn-danger:hover {
+    background: #dc3545;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+}
